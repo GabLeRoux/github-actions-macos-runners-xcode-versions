@@ -5,8 +5,9 @@ runner environments.
 
 ### Overview
 
-The project currently contains a single GitHub Actions workflow file that runs on the `push` event to the `main` branch.
-The workflow uses a matrix strategy to test the workflow on various macOS runner environments, including:
+The project currently contains [a single GitHub Actions workflow file](.github/workflows/main.yml) that runs on
+the `push` event to the `main` branch. The workflow uses a matrix strategy to test the workflow on various macOS runner
+environments, including:
 
 - `macos-11`
 - `macos-12`
@@ -30,18 +31,19 @@ Here's a table summarizing the macOS and Xcode versions for each runner image ba
 
 Last update : 2024-04-23
 
-| Runner Image   | macOS Version | Xcode Version | Xcode Build Version |
-|----------------|---------------|---------------|---------------------|
-| macos-11       | 11.7.10       | 13.2.1        | 13C100              |
-| macos-12       | 12.7.4        | 14.2          | 14C18               |
-| macos-13       | 13.6.6        | 15.0.1        | 15A507              |
-| macos-14       | 14.4.1        | 15.0.1        | 15A507              |
-| macos-latest   | 12.7.4        | 14.2          | 14C18               |
+| Runner Image | macOS Version | Xcode Version | Xcode Build Version |
+|--------------|---------------|---------------|---------------------|
+| macos-11     | 11.7.10       | 13.2.1        | 13C100              |
+| macos-12     | 12.7.4        | 14.2          | 14C18               |
+| macos-13     | 13.6.6        | 15.0.1        | 15A507              |
+| macos-14     | 14.4.1        | 15.0.1        | 15A507              |
+| macos-latest | 12.7.4        | 14.2          | 14C18               |
 
 ### Why?
 
 I wanted to know what macOS versions and Xcode versions are available on the GitHub Actions macOS runners and couldn't
-find an up to date list. It also helped resolving the [following issue](https://github.com/game-ci/unity-builder/issues/642#issuecomment-2072058707). 
+find an up to date list. It also helped resolving
+the [following issue](https://github.com/game-ci/unity-builder/issues/642#issuecomment-2072058707).
 
 Interestingly, [the following documentation](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/about-self-hosted-runners)
 indicates this :
