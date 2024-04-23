@@ -16,6 +16,7 @@ jobs:
           - macos-12
           - macos-13
           - macos-14
+          - macos-latest
     steps:
       - name: Print Xcode Version
         run: xcodebuild -version
